@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+body{
+    height: 950px;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to top, #5588e0 0%, #4481eb 100%);
+}
+.contenedor-login{
+    height: 650px;
+    width: 960px;
+    margin: 96px auto;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.contenedor-login-principal{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px;
+    padding-top: 8px;
+    background-color: #ffffff;
+}
+.contenedor-imagen{
+    width: 50%;
+    padding: 32px;
+    box-sizing: border-box;
+    object-fit: contain;
+    background-color: #bcd2f8;
+}
+.titulo{
+    text-transform: capitalize;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #5995fd;
+}
+.datos-login{
+    border: 1px;
+    height: 55%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+.datos, .boton{
+    width: 90%;
+    height: 50px;
+    font-size: 16px;
+}
+.datos{
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+.datos:hover{
+    border: 2px solid #5995fd;
+}
+.boton{
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #5995fd;
+    cursor: pointer;
+}
+.link-margen{
+    margin-top: 100px;
+    color: #5995fd;
+    font-weight: 600;
+    cursor: pointer;
+}
+.link{
+    color: #5995fd;
+    font-weight: 600;
+    cursor: pointer;
+}
+.inicio{
+    letter-spacing: 2px;
+    font-weight: 570;
+    margin-left: 280px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+.link-inicio{
+    text-decoration: none;
+    color: #5995fd;
+    font-weight: 600;
+    cursor: pointer;
+}
+
