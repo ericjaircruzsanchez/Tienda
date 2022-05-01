@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+body{
+    height: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to top, #5588e0 0%, #4481eb 100%);
+}
+/*Contenedor central*/
+.contenedor-login{
+    height: 962px;
+    width: 962px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 20px;
+}
+/*Formulario*/
+.contenedor-login-principal{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #ffffff;
+}
+
+div h1{
+    text-transform: capitalize;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: 5995fd;
+}
+/*.titulo{
+    text-transform: capitalize;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: 5995fd;
+}*/
+
+form{
+    border: 1px;
+    height: 55%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+/*.datos-login{
+    border: 1px;
+    height: 55%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}*/
+
+.datos, .boton{
+    width: 90%;
+    height: 50px;
+    font-size: 16px;
+}
+.datos{
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+.datos:focus{
+    background-color: #eeeeee;
+}
+.datos:hover{
+    border: 2px solid #5995fd;
+}
+.boton{
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #5995fd;
+    cursor: pointer;
+}
+.link-margen{
+    margin-top: 100px;
+    color: #5995fd;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*a:only-of-type{
+    color: #5995fd;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}*/
+a:link{
+    color: #5995fd;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:visited{
+    color: #5995fd;
+}
+a:active{
+    color: #eeeeee;
+}
+/*.link{
+    color: #5995fd;
+    font-weight: 600;
+    cursor: pointer;
+}*/
+
+.inicio{
+    letter-spacing: 2px;
+    font-weight: 570;
+    margin-left: 20%;
+    cursor: pointer;
+    text-decoration: none;
+    color: #5995fd;
+}
+.link-inicio{
+    text-decoration: none;
+    color: #5995fd;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*Contenedor imagen*/
+.contenedor-login-imagen{
+    width: 50%;
+    height: 70%;
+    padding: 32px;
+    box-sizing: border-box;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: contain;
+    background-color: #bcd2f8;
+}
+/*Imagen*/
+
+.contenedor-login-imagen img{
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+    object-fit: contain;
+    background-color: #bcd2f8;
+}
+/*.contenedor-imagen{
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+    object-fit: contain;
+    background-color: #bcd2f8;
+}*/
+
+/*responsive*/
+@media screen and (max-width: 1200px) {
+    .inicio{
+        margin-left: 10%;
+    }
+    .contenedor-login{
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .contenedor-login-principal{
+        width: 47%;
+        height: 60%;
+    }
+    .contenedor-login-imagen{
+        width: 47%;
+        height: 60%;
+    }
+    .nombre{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px) {
+    .inicio{
+        margin-left: 10%;
+    }
+    .titulo{
+        font-size: 25px;
+    }
+    .contenedor-login-principal > h1{
+        font-size: 28px;
+        margin: 7%;
+    }
+    .contenedor-login{
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    form{
+        margin: 8%;
+        height: 70%;
+    }
+    .contenedor-login-principal{
+        width: 45%;
+        height: 60%;
+    }
+    .contenedor-login-imagen{
+        width: 45%;
+        height: 60%;
+        padding: 5px;
+    }
+    .datos-login{
+        width: 90%;
+        height: 65%;
+        margin: 5px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .inicio{
+        margin-left: 10%;
+    }
+    .contenedor-login{
+        max-width: 100%;
+        max-height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .titulo{
+        margin: 15px;
+    }
+    .contenedor-login-principal{
+        width: 70%;
+        height: 50%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+    .contenedor-login-imagen{
+        width: 70%;
+        height: 30%;
+        padding: 5px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+    }
+    .datos-login{
+        width: 80%;
+        height: 75%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .datos{
+        padding-left: 10;
+        margin: 0;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .boton{
+        height: 15%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .contenedor-login-principal{
+        width: 70%;
+        height: 60%;
+        border-radius: 20px;
+    }
+    .contenedor-login-principal > h1{
+        font-size: 25px;
+    }
+    .contenedor-login-imagen{
+        display: none;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .datos, .boton{
+        width: 90%;
+        height: 50px;
+        font-size: 15px;
+    }
+    p{
+        font-size: 14px;
+    }
+}

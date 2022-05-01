@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/estilos.css">
+        <title>Ayuda</title>
+    </head>
+    <body>
+        <div class="contenedor-login">
+            <div class="contenedor-login-principal">
+                <h1>Centro de ayuda</h1>
+                <form>
+                    <span class="problema">¿Qué problema tuviste?</span>
+                    <select class="datos" name="problema" id="problema"><br>
+                        <option value="1">Problema con un vendedor</option>
+                        <option value="2">Fraude</option>
+                        <option value="2">Mal servicio</option>
+                        <option value="2">Entrega</option>
+                        <option value="2">Con la página</option>
+                    </select>
+                    <span class="problema">¿Hubo acoso de por medio?</span>
+                    <div>
+                        <input type="radio" name="my-input" id="yes">
+                        <label for="yes">Si</label>
+                        <input type="radio" name="my-input" id="no">
+                        <label for="no">No</label>
+                        <input name="disabled-radio" class="disabled-radio" type="radio" disabled>
+                        <label for="disabled-radio">No lo se</label>
+                    </div>
+                    <span>Describe el problema</span>
+                    <textarea class="datos-descripcion" name="descripcion" id="datos"></textarea>
+                    <span class="problema">¿Desea recibir correo sobre la continuidad del caso?</span>
+                    <input class="datos-check" type="checkbox">
+                    <button class="boton">Enviar reporte</button>
+                    <a href="../tienda.html">Volver al inicio</a>
+                </form>
+            </div>
+            <div class="contenedor-login-imagen">
+                <img src="img/support.svg" alt="imagenlogin">
+            </div>
+        </div>
+    </body>
+</html>

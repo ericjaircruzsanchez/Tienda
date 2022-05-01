@@ -1,0 +1,69 @@
+<html>  
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/estilos.css">
+        <script src="https://kit.fontawesome.com/323576b8af.js" crossorigin="anonymous"></script>
+        <title>Pago</title>
+    </head>
+    <body>
+        <div class="contenedor-principal">
+            <div class="contenedor-nav">
+                <div class="contenedor-nombre-empresa">
+                    <span class="titulo">UPIIWEB</span>
+                </div>
+                <div class="contenedor-titulo">
+                    <span class="categoria">Forma de pago</span>
+                </div>
+                <div class="contenedor-area">
+                    <div class="contenedor-iconos">
+                        <a href="../tienda.html" class="icono"><i class="fa-solid fa-house-chimney"></i></a>
+                        <a href="../carrito_compras/carro.html" class="icono"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                    <div class="contenedor-titulos">
+                        <span class="titulo-icono">Inicio</span>
+                        <span class="titulo-icono">Volver</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-pago">
+                <div class="">
+                        <span>Número de tarjeta: </span><br>
+                        <input type="text" class="datos" placeholder="xxx-xxx-xxx-xxx"><br>
+                        <span>Vigencia: </span><br>
+                        <input type="text" class="datos" placeholder="xx/xx"><br>
+                        <span>Digitos de seguridad: </span><br>
+                        <input type="text" class="datos" placeholder="1234"><br>
+                        <span>Nombre del titular: </span><br>
+                        <input type="text" class="datos" placeholder="Eric Jair"><br>
+                        <span>Dirección de destino: </span><br>
+                        <input type="text" class="datos" placeholder="Sur 184 2046 Ramos Millan"><br>
+                        <span>Referencias: </span><br>
+                        <input type="text" class="datos" placeholder="Casa color blanca con portón negro"><br>
+                        <span>Envío: </span><br>
+                        <select class="datos" name="envio" id="envio"><br>
+                            <option value="1">Envío común</option>
+                            <option value="2">Envío express</option>
+                        </select>
+                        <button class="boton">Pagar</button>
+                </div>
+                <div class="contenedor-producto">
+                    <div class="contenedor-tarjetas">
+                        <img src="img/pantalla.webp" alt="pantalla">
+                        <div class="contenedor-informacion">
+                            <pspan class="nombre-producto">75" Q70A QLED 4K Smart TV 2021</span>
+                            <span class="descripcion-producto">Experimenta el color envolvente con detalles y contrastes más profundos. Quantum HDR 8x te lleva a un nuevo nivel de HDR.</span>
+                            <span class="precio">$42,999</span>
+                        </div>
+                        <div class="contenedor-estrella">
+                            <span><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i></span>
+                            <span class="votos">1000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="img/estrella.js"></script>
+    </body>
+</html>

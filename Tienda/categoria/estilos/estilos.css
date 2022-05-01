@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*Menu*/
+.contenedor-nav{
+    width: 100%;
+    max-width: 90%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor-nombre-empresa{
+    width: 310px;
+    background: #ffffff;
+}
+span[class$=ulo]{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #5995fd;
+}
+/*.titulo{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #5995fd;
+}*/
+.contenedor-titulo{
+    width: 1000px;
+    background-color: #ffffff;
+    text-align: center;
+}
+span[class^=cat]{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #5995fd;
+}
+/*.categoria{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #5995fd;
+}*/
+.contenedor-area{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+.contenedor-iconos{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenedor-titulos{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+.contenedor-titulos > span{
+    font-size: 15px;
+    font-weight: 600;
+    color: #5995fd;
+    justify-content: space-between;
+    text-align: center;
+}
+/*.titulo-icono{
+    font-size: 15px;
+    font-weight: 600;
+    color: #5995fd;
+    justify-content: space-between;
+    text-align: center;
+}*/
+.icono{
+    font-size: 35px;
+    padding: 20px;
+    cursor: pointer;
+    color: #5995fd;
+}
+/*Contenedor-area-categoria*/
+.contenedor-categoria{
+    width: 100%;
+    max-width: 85%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    padding: 40px 0;
+    display: flex;
+    gap: 2%;
+}
+/*Tabla*/
+.contenedor-menu{
+    width: 300px;
+}
+.contenedor-menu a{
+    text-decoration: none;
+    color: #000000;
+}
+.contenedor-menu h3{
+    color: #ffffff;
+    background-color: #bcd2f8;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    letter-spacing: 1px;
+}
+.contenedor-menu ul{
+    position: relative;
+    background-color: #ffffff;
+}
+.contenedor-menu ul li{
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 5px 25px #0002;
+    transition: transform 0.3s;
+}
+.contenedor-menu ul li:hover{
+    transform: scale(1.05);
+    z-index: 100;
+    background: #bcd2f8;
+    box-shadow: 0 5px 25px #0003;
+    color: #ffffff;
+}
+/*Distribución de tarjetas*/
+.contenedor-producto{
+    background-color: #bcd2f8;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 5px;
+}
+/*Tarjeta de producto*/
+.contenedor-tarjetas{
+    width: 25%;
+    height: 100%;
+    margin: 3%;
+    display: flex;
+    flex-flow: column;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 15px 25px #0004;
+    transition: all 400ms ease;
+    background-color: #ffffff;
+}
+.link{
+    text-decoration: none;
+    color: #000000;
+}
+.contenedor-tarjetas:hover{
+    box-shadow: 5px 20px 30px #0006;
+    transform: translateY(-3%);
+}
+.link > img{
+    width: 100%;
+    object-fit: cover;
+}
+img ~ div{
+    padding: 1em;
+    flex-flow: column;
+}
+/*.contenedor-informacion{
+    padding: 1em;
+    flex-flow: column;
+}*/
+span[class|=nombre]{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-bottom: 2px;
+}
+/*.nombre-producto{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-bottom: 2px;
+}*/
+span[class*=descripcion]{
+    font-weight: 350;
+}
+/*.descripcion-producto{
+    font-weight: 350;
+}*/
+span[class="precio"]{
+    font-size: 16px;
+    font-weight: 600;
+}
+/*.precio{
+    font-size: 16px;
+    font-weight: 600;
+}*/
+.contenedor-informacion * + *{
+    margin-bottom: 0.5em;
+}
+.contenedor-estrella{
+    padding: 1em;
+}
+.contenedor-estrella >span:first-child{
+    color: #ebda44;
+}
+.contenedor-estrella > span:last-child{
+    font-size: 13px;
+    font-weight: 450;
+}
+@media screen and (max-width: 1200px){
+    .contenedor-producto{
+        width: 100%;
+    }
+    .contenedor-area{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1150px){
+    .contenedor-area{
+        width: 50%;
+    }
+    .contenedor-categoria{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .contenedor-menu{
+        width: 100%;
+    }
+    .contenedor-menu ul li:hover{
+        transform: scale(1.025);
+        z-index: 100;
+    }
+    .contenedor-producto{
+        margin-top: 2%;
+    }
+}
+@media screen and (max-width: 800px){
+    .contenedor-nav{
+        margin-top: 1%;
+    }
+    .icono{
+        font-size: 20px;
+    }
+    .contenedor-titulos{
+        font-size: 5px;
+    }
+    .contenedor-area{
+        width: 50%;
+    }
+    .contenedor-titulos, .contenedor-iconos{
+        width: 100%;
+        justify-content: space-between;
+    }
+    span[class$=ulo]{
+        font-size: 25px;
+    }
+    span[class^=cat]{
+        font-size: 25px;
+    }
+    .contenedor-menu{
+        width: 100%;
+    }
+    .contenedor-producto{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 3%;
+    }
+    .contenedor-tarjetas{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 600px){
+    .contenedor-area{
+        width: 50%;
+    }
+    .contenedor-iconos{
+        width: 10%;
+    }
+    .icono{
+        font-size: 20px;
+    }
+    .contenedor-titulos{
+        font-size: 3px;
+    }
+    span[class$=ulo]{
+        font-size: 20px;
+    }
+    span[class^=cat]{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 450px){
+    .contenedor-area{
+        width: 50%;
+    }
+    .contenedor-iconos{
+        width: 10%;
+    }
+    .icono{
+        font-size: 15px;
+    }
+    .contenedor-titulos{
+        font-size: 3px;
+    }
+    span[class$=ulo]{
+        font-size: 15px;
+    }
+    span[class^=cat]{
+        font-size: 15px;
+    }
+    .contenedor-tarjetas:hover{
+        transform: translateY(-1.5%);
+    }
+}
